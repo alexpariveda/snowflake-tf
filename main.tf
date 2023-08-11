@@ -8,7 +8,8 @@ terraform {
 }
 
 provider "snowflake" {
-  role = "MAIN-TF"
+  role = "SYSADMIN"
+  region   = "south-central-us.azure" # much needed
 }
 
 resource "snowflake_database" "db" {
